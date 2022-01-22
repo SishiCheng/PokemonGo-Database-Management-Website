@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome file</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><h1 id="pokedex-project">Pokedex Project</h1>
+<p>This is the read me file for pokedex project.<br>
+For now, we set up the system as new user are default admin user for grading purporse.</p>
+<h1 id="home-page">Home Page</h1>
+<p><a href="http://cmpsc431-s3-g-12.vmhost.psu.edu/start.php">http://cmpsc431-s3-g-12.vmhost.psu.edu/start.php</a></p>
+<h1 id="admin-login">Admin Login</h1>
+<p>Username: group12<br>
+Password: pokemon</p>
+<h1 id="project-login">Project Login</h1>
+<p>User can sign up and login to the project by login and sign up page. Once user login, user will be dirscted to the hopmepage.</p>
+<h1 id="project-desription">Project Desription</h1>
+<p>The project can add and delete pokemon into index, print top 15 pokemon by flee rate, fast move,  or damage per second modify evolution chian.</p>
+<h2 id="home-page-1">Home Page</h2>
+<p>List all the polkemons currently stored in the database. User can click Pokename to see detailed desciption. Admin can press the delete button to delete it form the pokedex</p>
+<h2 id="pokemon-lookup">Pokemon Lookup</h2>
+<p>To serach pokemon according user’s condition.</p>
+<h2 id="modify-pokemon">Modify Pokemon</h2>
+<p>Need to login in order to use this function and this would be a admin only feature. This page modified the property of pokemon. This uses tranaction to ensure data concurrency.</p>
+<h2 id="show-evolution-chain">Show Evolution Chain</h2>
+<p>To see evolution chaine for the pokemon. We can list all pokemon or list by type of pokemon. Poke ID 0 represents this pokemon does not evolve to or from any pokemon.</p>
+<h2 id="add-evoluion-chian">Add Evoluion Chian</h2>
+<p>This page is a admin only feature, it add a evoultion chain to the table. This uses tranaction to ensure data concurrency.</p>
+<h2 id="delete-evolution-chian">Delete Evolution Chian</h2>
+<p>This page is admin only and can delete a evolution relation. This uses tranaction to ensure data concurrency.</p>
+<h2 id="modify-evolution">Modify Evolution</h2>
+<p>This page modifiy an existing evolution relation. And use transaction to handle data concurrency problem.</p>
+<h2 id="top-15-flee-rate">Top 15 Flee rate</h2>
+<p>This function list top 15 pokemons for flee rate. User can sort this table by height, weight, catch rate and flee rate.</p>
+<h2 id="top-by-charge-move">Top By Charge Move</h2>
+<p>This function list top 15 pokemons for charge move. User can sort this table by height, weight, catch rate and flee rate.</p>
+<h2 id="top15-by-fast-move">Top15 by Fast Move</h2>
+<p>This function list top 15 pokemons for fast move. User can sort this table by height, weight, catch rate and flee rate.</p>
+<h1 id="error-handeling">Error Handeling</h1>
+<p>All the error will be catched by try cathc method. For login and signup, it will prompt user if they entered invalid data such as username already taken, password not match.<br>
+Also, the inconsistent data entered into database will automatically rolled back to the correct state and will report to the user.</p>
+</div>
+</body>
+
+</html>
